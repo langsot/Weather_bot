@@ -24,9 +24,7 @@ public class MassageGeneration {
 
     public String generateHelpMassage() {
         massage = ":sunny: Вот мои доступные комманды :sunny:\n\n";
-        botConfigService.getAllCommands().forEach(command -> {
-            massage += command.getName() + " - " + command.getDescription() + "\n";
-        });
+        botConfigService.getAllCommands().forEach(command -> massage += command.getName() + " - " + command.getDescription() + "\n");
         return EmojiParser.parseToUnicode(massage);
     }
 

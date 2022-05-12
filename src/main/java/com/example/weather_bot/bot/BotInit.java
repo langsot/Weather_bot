@@ -6,15 +6,12 @@ import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
-import org.telegram.telegrambots.meta.generics.TelegramBot;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
-
-import javax.ws.rs.core.Application;
 
 @Component
 public class BotInit {
 
-    private WeatherBot weatherBot;
+    private final WeatherBot weatherBot;
 
     public BotInit(WeatherBot weatherBot) {
         this.weatherBot = weatherBot;

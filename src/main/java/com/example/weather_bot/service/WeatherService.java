@@ -1,6 +1,6 @@
 package com.example.weather_bot.service;
 
-import com.example.weather_bot.controller.rest_template.WeatherRestTemplate;
+import com.example.weather_bot.controller.WeatherRestTemplate;
 import com.example.weather_bot.entity.WeatherNow;
 import org.springframework.stereotype.Service;
 

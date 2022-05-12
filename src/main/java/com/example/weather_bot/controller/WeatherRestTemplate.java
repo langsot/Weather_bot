@@ -1,4 +1,4 @@
-package com.example.weather_bot.controller.rest_template;
+package com.example.weather_bot.controller;
 
 import com.example.weather_bot.entity.WeatherNow;
 import com.example.weather_bot.service.BotConfigService;
@@ -12,9 +12,9 @@ import java.net.URL;
 @Component
 public class WeatherRestTemplate {
 
-    private RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
 
-    private BotConfigService botConfig;
+    private final BotConfigService botConfig;
 
     public WeatherRestTemplate(RestTemplate restTemplate, BotConfigService botConfig) {
         this.restTemplate = restTemplate;
